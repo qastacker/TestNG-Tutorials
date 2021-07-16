@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Sample Suite">
+	<test thread-count="5" name="Sample Test">
+		<classes>
+			<class name="Test.day1">
+			<methods>
+				<include name="Demo" />
+			</methods>
+			</class>
+			<class name="Test.day2" />
+		</classes>
+	</test>
+	<test name="Trial Case">
+		<classes>
+			<class name="Test.day3">
+			<methods>
+				<exclude name="TrialCase" />
+			</methods>
+		</class>
+		</classes>
+	</test>
+</suite> <!-- Suite -->
